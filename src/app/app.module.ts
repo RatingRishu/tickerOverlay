@@ -8,6 +8,7 @@ import { BattingTeamComponent } from './batting-team/batting-team.component';
 import { BowlingTeamComponent } from './bowling-team/bowling-team.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ [{ provide: LocationStrategy, useClass: HashLocationStrategy }]],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
