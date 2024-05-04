@@ -1,0 +1,70 @@
+.batting-team-title {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 16px;
+    font-weight: bolder;
+}
+
+.team-stats {
+    font-size: 16px;
+    font-weight: bold;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.score-board-header {
+    background: black;
+    margin-top: 8px;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 8px;
+}
+
+.batting-player-tile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #f5b93c;
+    background: linear-gradient(90deg, rgba(255,145,77,1) 0%, rgba(255,222,89,1) 50%);
+    border: 1px solid white;
+    color: black;
+    padding: 8px;
+}
+
+.yet-bat-plaer-tile{
+    border: 1px solid white;
+    background-color: grey;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.player-name {
+    font-weight: bold;
+    width: 25%;
+}
+
+.player-status {
+    width: 35%;
+    text-align: left;
+}
+
+.player-fours,
+.player-sixes,
+.player-runs,
+.player-strike-rate {
+    width: 10%;
+    text-align: center;
+}
+
+
+.batting-players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

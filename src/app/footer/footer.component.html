@@ -1,0 +1,46 @@
+<div class="score-banner" >
+    <div class="score-wrapper">
+        <div class="left">
+            <div class="batting-team-details">
+                <img class="batting-team-logo " [src]="data.battingTeamLogo">
+                <div class="team-name-and-score">
+                    <div class="team-name">{{ data.teamName }}</div>
+                    <div class="team-score-and-overs">
+                        <div class="team-score">{{ data.scoreStripRuns }}/{{ data.scoreStripWickets }}</div>
+                        <div class="overs">
+                            <span class="title">Overs </span>
+                            <span class="value">{{ data.scoreStripOvers }}.{{ data.scoreStripBalls }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="striker-and-target">
+                <div class="striker">
+                    <span class="name">{{ data.strikerBatsmanFirstName.toUpperCase() }}</span>
+                    <span class="score">{{data.runsForStriker}} ({{data.ballsForStriker}})</span>
+                </div>
+                <div class="target" *ngIf="data.target">Traget</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="non-striker-and-target-numbers">
+                <div class="non-striker">
+                    <span class="name">{{ data.nonStrikerBatsmanFirstName.toUpperCase() }}</span>
+                    <span class="score">{{ data.runsForNonStriker }} ({{ data.ballsForNonStriker }})</span>
+                </div>
+                <div class="target-score">{{ data.target }}</div>
+            </div>
+
+            <div class="bowling-team-name-and-details">
+                <div class="bowling-team-name">{{ data.bowlingTeamName }}</div>
+                <div class="bowler-name-and-details">
+                    <span class="bowler-name">{{ data.bowlerFirstName.toUpperCase() }}</span>
+                    <span class="bowler-stats">{{ data.wicketsForBowler }}-{{ data.runsGivenByBowler }}</span>
+                    <span class="bowler-over-stats">{{ data.bowlerOverNumber }}.{{ data.bowlerBallNumber }}</span>
+                </div>
+            </div>
+            <img class="bowling-team-logo" [src]="data.bowlingTeamLogo">
+
+        </div>
+    </div>
+</div>

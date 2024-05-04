@@ -1,0 +1,106 @@
+/* .bowling-team-title {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+.stats-bowling-details {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stats-bowling-details {
+    display: flex;
+    gap: 16px;
+}
+.bowling-player-tile {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    background-color: #f5b93c;
+    margin: 5px;
+}
+.player-name {
+    font-weight: bold;
+    padding: 2%;
+}
+.bowling-player-stats {
+    padding: 2%;
+    background-color: #86c0f7;
+    width: 20%;
+    text-align: right;
+}
+.bowling-players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+
+
+.batting-team-title {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 16px;
+    font-weight: bolder;
+}
+
+.team-stats {
+    font-size: 16px;
+    font-weight: bold;
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.score-board-header {
+    background: black;
+    margin-top: 8px;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 8px;
+}
+
+.batting-player-tile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #f5b93c;
+    background: linear-gradient(90deg, rgba(255,145,77,1) 0%, rgba(255,222,89,1) 50%);
+    border: 1px solid white;
+    color: black;
+    padding: 8px;
+}
+
+.player-name {
+    font-weight: bold;
+    width: 25%;
+}
+
+.player-status {
+    width: 35%;
+    text-align: left;
+}
+
+.player-maiden,
+.player-sixes,
+.player-runs,
+.player-wicket,
+.player-economy {
+    width: 10%;
+    text-align: center;
+}
+
+
+.batting-players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

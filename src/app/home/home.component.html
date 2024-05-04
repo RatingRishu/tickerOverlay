@@ -1,0 +1,12 @@
+<header>
+    <img [src]="channelLogo" class="channel-logo" *ngIf="channelLogo" alt="">
+</header>
+<main>
+    <video onloadedmetadata="this.muted=true" *ngIf="showAnimatation" autoplay   preload="auto" class="animation">
+        <source [src]="videoUrl" type="video/mp4">
+    </video> 
+    <app-match-summary *ngIf="showMatchSummary" [battingStats]="battingTeamDetails" [battingMetaInfo]="battingMetaInfo" [bowlingTeamDetails]="bowlingTeamDetails" [bowlingMetaInfo]="bowlingMetaInfo"></app-match-summary>
+</main>
+<footer>
+    <app-footer [data]="tickerData" *ngIf="showTicker"></app-footer>
+</footer>

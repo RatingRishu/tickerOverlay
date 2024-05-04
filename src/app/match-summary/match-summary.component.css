@@ -1,0 +1,49 @@
+.score-card {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0.9;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../../assets/img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 16px;
+}
+
+.team-one,
+.team-two {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #fff;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.team-two{
+   flex-direction: row-reverse;
+  text-align: right;
+
+}
+
+.team-one-logo,.team-two-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

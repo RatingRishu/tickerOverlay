@@ -1,0 +1,29 @@
+<div class="batting-team-title" [style.background-image]="'url(' + bgImageUrl + ')'">
+    <div class="team-name">{{ bowlingMetaInfo.bowlingTeam }}
+    </div>
+    <div class="team-stats">
+        <span>Overs {{bowlingMetaInfo.overs}}</span>
+        <span>{{bowlingMetaInfo.bowlingScore}} / {{bowlingMetaInfo.wickets}}</span>
+    </div>
+</div>
+
+<div class="score-board-header">
+    <span class="player-name">Bowler</span>
+    <span class="player-status"></span>
+    <span class="player-over">Over</span>
+    <span class="player-maiden">Maiden</span>
+    <span class="player-wicket">Wickets</span>
+    <span class="player-runs">Runs</span>
+    <span class="player-economy">Economy</span>
+</div>
+<div class="batting-players">
+    <div class="batting-player-tile" *ngFor="let bowler of bowlingTeamDetails">
+        <span class="player-name">{{ bowler.name}}</span>
+        <span class="player-status"></span>
+        <span class="player-over">{{bowler.overs}}</span>
+        <span class="player-maiden">{{ bowler.maiden }}</span>
+        <span class="player-wicket">{{ bowler.wickets }}</span>
+        <span class="player-runs">{{ bowler.runs }}</span>
+        <span class="player-economy">{{ bowler.economy.toFixed(2) }}</span>
+    </div>
+</div>

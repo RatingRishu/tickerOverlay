@@ -1,0 +1,33 @@
+<div class="batting-team-title" [style.background-image]="'url(' + bgImageUrl + ')'">
+    <div class="team-name">{{ battingMetaInfo.battingTeam }}
+    </div>
+    <div class="team-stats">
+        <span>Overs:{{battingMetaInfo.overs}}</span>
+        <span> Extra:{{battingMetaInfo.extras}}</span>
+        <span>{{battingMetaInfo.battingScore}} / {{battingMetaInfo.wickets}}</span>
+    </div>
+</div>
+
+<div class="score-board-header">
+    <span class="player-name">Batsman</span>
+    <span class="player-status"></span>
+    <span class="player-fours">4s</span>
+    <span class="player-sixes">6s</span>
+    <span class="player-runs">R</span>
+    <span class="player-strike-rate">SR</span>
+</div>
+<div class="batting-players">
+    <div class="batting-player-tile" *ngFor="let player of battingStats">
+        <span class="player-name">{{ player.name.toUpperCase()}} </span>
+        <span class="player-status">{{player.status}}</span>
+        <span class="player-fours">{{ player.fours }}</span>
+        <span class="player-sixes">{{ player.sixes }}</span>
+        <span class="player-runs">{{ player.runs }}</span>
+        <span class="player-strike-rate">{{ player.strikeRate.toFixed(2) }}</span>
+    </div>
+</div>
+
+<!-- run for loop for 11 times -->
+<!-- <div class="yet-to-bat-players" *ngFor="">
+    <div class="yet-bat-plaer-tile"></div>
+</div> -->

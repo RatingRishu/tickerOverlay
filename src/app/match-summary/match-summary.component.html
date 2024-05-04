@@ -1,0 +1,23 @@
+<div class="score-card">
+    <div class="header">
+        <div class="team-one">
+            <img [src]="battingMetaInfo.battingTeamLogo" alt="Mumbai Indians" class="team-one-logo" />
+            {{ battingMetaInfo.battingTeam }}
+        </div>
+
+        <div class="team-two">
+            <img [src]="battingMetaInfo.bowlingTeamLogo" alt="Mumbai Indians" class="team-two-logo" />
+            {{ battingMetaInfo.bowlingTeam }}
+        </div>
+
+    </div>
+
+    <div *ngIf="showBatting">
+        <app-batting-team [battingStats]="battingStats" [battingMetaInfo]="battingMetaInfo"></app-batting-team>
+    </div>
+
+    <div *ngIf="!showBatting">
+        <app-bowling-team [bowlingTeamDetails]="bowlingTeamDetails"
+            [bowlingMetaInfo]="bowlingMetaInfo"></app-bowling-team>
+    </div>
+</div>
